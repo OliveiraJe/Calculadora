@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="bg">
+        <h1 class="title">CALCULADORA</h1>
+        <p id="resultado"></p>
+        <table>
+            <tr>
+                <td colspan="2"><button onclick="clean()" style="width: 162px; background-color: rgb(255, 94, 0);">C</button></td>
+                <td><button onclick="back()" style="background-color: rgb(255, 94, 0);"><img src="apagar.png" style="hei
+                15px; width: 25px;"></button></td>
+                <td><button onclick="insert(' - ')" style="background-color: rgb(0, 10, 117);">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('7')">7</button></td>
+                <td><button onclick="insert('8')">8</button></td>
+                <td><button onclick="insert('9')">9</button></td>
+                <td><button onclick="insert(' / ')" style="background-color: rgb(0, 10, 117);">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('4')">4</button></td>
+                <td><button onclick="insert('5')">5</button></td>
+                <td><button onclick="insert('6')">6</button></td>
+                <td><button onclick="insert(' * ')" style="background-color: rgb(0, 10, 117);">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('1')">1</button></td>
+                <td><button onclick="insert('2')">2</button></td>
+                <td><button onclick="insert('3')">3</button></td>
+                <td><button onclick="insert(' + ')" style="background-color: rgb(0, 10, 117);">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('.')" style="background-color: rgb(0, 10, 117);">.</button></td>
+                <td><button onclick="insert('0')">0</button></td>
+                <td colspan="2"><button onclick="calcular()" style="width: 162px; background-color: rgb(255, 94, 0);">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
